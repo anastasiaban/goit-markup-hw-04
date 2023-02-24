@@ -6,6 +6,7 @@
     --footer-text-color: #E7E9FC;
     --order-button-color: #FFFFFF;
     --hover-focus-color: #404BBF; 
+    --l-grad: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) 100% );
 }
 
 body {
@@ -139,7 +140,7 @@ margin-left: 76px;
 /*------------studio-------------------*/
 
 .hero {
-    background-color: var(--primary-text-color);
+
     text-align: center;
     
     margin-left: auto;
@@ -155,16 +156,16 @@ margin-left: 76px;
 
     height: 600px;
     max-width: 1440px;
-    
+
     margin-left: auto;
     margin-right: auto;
-    background-image: url('../images/hero.jpg');
 
+    background-image: var(--l-grad), url('../images/hero.jpg'), url('../images/Dark-bg\ \(1\).jpg');
     background-color: var(--primary-text-color);
-   
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
     box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
  }
 
@@ -326,6 +327,25 @@ column-gap: 24px;
         margin-bottom: 0;
         text-align: center;
         
+}
+
+.team-soc-list {
+display: flex;
+justify-content: center;
+gap: 24px;
+
+}
+
+.team-soc-item {
+
+}
+
+.team-soc-link {
+
+}
+
+.link {
+
 }
 
 
