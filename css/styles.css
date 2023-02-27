@@ -8,6 +8,7 @@
     --hover-focus-color: #404BBF; 
     --l-grad: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) 100% );
     --logo-cust: #8E8F99;
+    --logo-dark-hover: #31D0AA;
 }
 
 body {
@@ -418,20 +419,16 @@ height: 88px;
     display: flex;
     justify-content: center;
     align-items: center;
- 
+    color: var(--logo-cust);
 }
 
 .customer-icon {
-    fill: var(--logo-cust);
+fill: currentColor;
 }
 
 .customer-list-icon:is(:hover, :focus) {
-border-color: var(--hover-focus-color);
-
-}
-
-.customer-icon:is(:hover, :focus) {
-    fill: var(--hover-focus-color);
+    border-color: var(--hover-focus-color);
+    color: var(--hover-focus-color);
 }
 
 /*button*/
@@ -558,8 +555,13 @@ border-radius: 4px;
     border-radius: 50%;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
+
+.footer-soc-link:is(:hover, :focus) {
+    background-color: var(--logo-dark-hover);
+}
+
 
 .footer-soc-icon {
     padding: 0;
